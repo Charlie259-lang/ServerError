@@ -8,7 +8,7 @@
       background: #121212 url('https://media.linklist.bio/backgrounds/Zq7Qb762Xj6KaUWUSEPXCDpmKLCATryoNbbjK7Er.webp') no-repeat center center fixed;
       background-size: cover;
       color: #ffffff;
-      padding: 15px;
+      padding: 30px; /* DIPERBESAR dari 15px */
       margin: 0;
       min-height: 100vh;
       display: flex;
@@ -36,10 +36,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: calc(100% + 60px);
-      height: calc(100% + 60px);
+      width: calc(100% + 80px); /* DIPERBESAR dari 60px */
+      height: calc(100% + 80px); /* DIPERBESAR dari 60px */
       background: rgba(0, 0, 0, 0.7);
-      border-radius: 12px;
+      border-radius: 15px; /* DIPERBESAR dari 12px */
       z-index: -1;
       box-shadow: 
         0 0 30px rgba(0, 0, 0, 0.8),
@@ -53,8 +53,8 @@
 
     .main-container {
       display: flex;
-      gap: 20px;
-      max-width: 900px;
+      gap: 30px; /* DIPERBESAR dari 20px */
+      max-width: 1000px; /* DIPERBESAR dari 900px */
       width: 100%;
       justify-content: center;
       align-items: flex-start;
@@ -66,11 +66,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 420px;
+      width: 500px; /* DIPERBESAR dari 420px */
     }
 
     .preview-section {
-      width: 320px;
+      width: 380px; /* DIPERBESAR dari 320px */
     }
 
     .input-container {
@@ -83,28 +83,28 @@
     /* JUDUL UTAMA DI TENGAH */
     .title-container {
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 25px; /* DIPERBESAR dari 15px */
       width: 100%;
     }
 
     .main-title {
       color: #00b4d8;
-      font-size: 22px;
+      font-size: 26px; /* DIPERBESAR dari 22px */
       font-weight: bold;
       text-align: center;
-      margin-bottom: 5px;
+      margin-bottom: 8px; /* DIPERBESAR dari 5px */
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
     .sub-title {
       color: #00b4d8;
-      font-size: 16px;
+      font-size: 18px; /* DIPERBESAR dari 16px */
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 15px; /* DIPERBESAR dari 10px */
       font-weight: normal;
       position: relative;
-      padding-bottom: 12px;
+      padding-bottom: 15px; /* DIPERBESAR dari 12px */
     }
 
     /* GARIS DI BAWAH SUBTITLE */
@@ -114,7 +114,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 220px;
+      width: 260px; /* DIPERBESAR dari 220px */
       height: 2px;
       background: linear-gradient(90deg, transparent, #00b4d8, #00b4d8, transparent);
       border-radius: 2px;
@@ -125,111 +125,128 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      margin-bottom: 12px;
+      margin-bottom: 15px; /* DIPERBESAR dari 12px */
     }
 
     .section-title {
       color: #00b4d8;
-      font-size: 14px;
+      font-size: 16px; /* DIPERBESAR dari 14px */
       font-weight: bold;
       text-align: left;
     }
 
     textarea {
       width: 100%;
-      height: 100px;
-      margin-bottom: 8px;
+      height: 130px; /* DIPERBESAR dari 100px */
+      margin-bottom: 12px; /* DIPERBESAR dari 8px */
       background: rgba(30, 30, 30, 0.9);
       color: #ffffff;
       border: 1px solid #2e2e2e;
-      padding: 8px;
-      border-radius: 4px;
+      padding: 12px; /* DIPERBESAR dari 8px */
+      border-radius: 6px; /* DIPERBESAR dari 4px */
       box-sizing: border-box;
       backdrop-filter: blur(5px);
-      font-size: 13px;
+      font-size: 14px; /* DIPERBESAR dari 13px */
     }
 
     .clear-btn {
       background: none;
       border: 1px solid #007b9e;
-      border-radius: 4px;
+      border-radius: 6px; /* DIPERBESAR dari 4px */
       color: #00b4d8;
       cursor: pointer;
-      padding: 4px 10px;
-      font-size: 12px;
-      margin-bottom: 25px; /* Ditambah jarak di sini */
+      padding: 8px 18px; /* DIPERBESAR dari 6px 14px */
+      font-size: 15px; /* DIPERBESAR dari 14px */
+      margin-bottom: 30px; /* DIPERBESAR dari 25px */
       backdrop-filter: blur(5px);
       background: rgba(30, 30, 30, 0.8);
       align-self: flex-start;
+      transition: all 0.3s ease;
     }
 
     .clear-btn:hover {
       background-color: #007b9e;
       color: #ffffff;
+      transform: scale(1.05);
     }
 
     /* Judul DATA SCATTER */
     .data-scatter-title {
       color: #00b4d8;
-      font-size: 16px;
+      font-size: 18px; /* DIPERBESAR dari 16px */
       font-weight: bold;
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 20px; /* DIPERBESAR dari 15px */
       width: 100%;
+      position: relative;
+      padding-bottom: 15px; /* TAMBAHAN: Padding untuk garis biru */
+    }
+
+    /* GARIS DI BAWAH DATA SCATTER */
+    .data-scatter-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 220px; /* Lebar garis */
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #00b4d8, #00b4d8, transparent);
+      border-radius: 2px;
     }
 
     .data-box {
       background: rgba(26, 26, 26, 0.9);
       border: 2px solid #007b9e;
-      border-radius: 6px;
-      padding: 8px 10px;
-      margin-bottom: 8px;
+      border-radius: 8px; /* DIPERBESAR dari 6px */
+      padding: 12px 14px; /* DIPERBESAR dari 8px 10px */
+      margin-bottom: 12px; /* DIPERBESAR dari 8px */
       display: flex;
       justify-content: space-between;
       align-items: center;
       backdrop-filter: blur(5px);
       width: 100%;
       box-sizing: border-box;
-      min-height: 40px;
+      min-height: 48px; /* DIPERBESAR dari 40px */
     }
 
     .label {
       font-weight: bold;
       color: #00b4d8;
-      width: 80px;
+      width: 90px; /* DIPERBESAR dari 80px */
       flex-shrink: 0;
       display: flex;
       align-items: center;
-      font-size: 13px;
+      font-size: 14px; /* DIPERBESAR dari 13px */
     }
 
     .value {
       flex-grow: 1;
-      margin: 0 6px;
+      margin: 0 8px; /* DIPERBESAR dari 6px */
       word-break: break-word;
       color: #e0f7ff;
       display: flex;
       align-items: center;
-      min-height: 16px;
-      width: 220px;
-      max-width: 220px;
-      min-width: 220px;
-      font-size: 13px;
+      min-height: 18px; /* DIPERBESAR dari 16px */
+      width: 260px; /* DIPERBESAR dari 220px */
+      max-width: 260px; /* DIPERBESAR dari 220px */
+      min-width: 260px; /* DIPERBESAR dari 220px */
+      font-size: 14px; /* DIPERBESAR dari 13px */
     }
 
     .copy-btn {
       background: rgba(0, 180, 216, 0.2);
       border: 1px solid #00b4d8;
-      border-radius: 4px;
+      border-radius: 6px; /* DIPERBESAR dari 4px */
       cursor: pointer;
-      padding: 5px;
+      padding: 8px; /* DIPERBESAR dari 5px */
       display: flex;
       align-items: center;
       flex-shrink: 0;
       outline: none;
       transition: all 0.3s ease;
-      min-width: 32px;
-      min-height: 32px;
+      min-width: 36px; /* DIPERBESAR dari 32px */
+      min-height: 36px; /* DIPERBESAR dari 32px */
       justify-content: center;
     }
 
@@ -253,8 +270,8 @@
     .copy-btn svg {
       fill: #00b4d8;
       transition: fill 0.2s ease;
-      width: 16px;
-      height: 16px;
+      width: 18px; /* DIPERBESAR dari 16px */
+      height: 18px; /* DIPERBESAR dari 16px */
     }
 
     .copy-btn:hover svg {
@@ -265,8 +282,8 @@
     .preview-section {
       background: rgba(26, 26, 26, 0.9);
       border: 2px solid #007b9e;
-      border-radius: 6px;
-      padding: 12px;
+      border-radius: 8px; /* DIPERBESAR dari 6px */
+      padding: 16px; /* DIPERBESAR dari 12px */
       backdrop-filter: blur(5px);
       height: fit-content;
     }
@@ -274,7 +291,7 @@
     .images-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 10px;
+      gap: 14px; /* DIPERBESAR dari 10px */
     }
 
     .image-item {
@@ -282,8 +299,8 @@
       flex-direction: column;
       align-items: center;
       background: rgba(30, 30, 30, 0.9);
-      padding: 10px;
-      border-radius: 6px;
+      padding: 12px; /* DIPERBESAR dari 10px */
+      border-radius: 8px; /* DIPERBESAR dari 6px */
       border: 1px solid #2e2e2e;
       backdrop-filter: blur(5px);
     }
@@ -291,14 +308,14 @@
     .image-title {
       color: #00b4d8;
       font-weight: bold;
-      margin-bottom: 6px;
-      font-size: 12px;
+      margin-bottom: 8px; /* DIPERBESAR dari 6px */
+      font-size: 14px; /* DIPERBESAR dari 12px */
     }
 
     .image-preview {
       max-width: 100%;
-      max-height: 150px;
-      border-radius: 4px;
+      max-height: 180px; /* DIPERBESAR dari 150px */
+      border-radius: 6px; /* DIPERBESAR dari 4px */
       border: 2px solid #007b9e;
       display: none;
       cursor: pointer;
@@ -311,40 +328,40 @@
     }
 
     .image-placeholder {
-      width: 160px;
-      height: 120px;
+      width: 180px; /* DIPERBESAR dari 160px */
+      height: 140px; /* DIPERBESAR dari 120px */
       background: rgba(26, 26, 26, 0.9);
       border: 2px dashed #007b9e;
-      border-radius: 6px;
+      border-radius: 8px; /* DIPERBESAR dari 6px */
       display: flex;
       align-items: center;
       justify-content: center;
       color: #00b4d8;
-      font-size: 10px;
+      font-size: 12px; /* DIPERBESAR dari 10px */
       text-align: center;
       cursor: default;
     }
 
     .image-error {
       color: #ff6b6b;
-      font-size: 9px;
-      margin-top: 3px;
+      font-size: 11px; /* DIPERBESAR dari 9px */
+      margin-top: 4px; /* DIPERBESAR dari 3px */
       display: none;
     }
 
     .image-loading {
       display: none;
       color: #00b4d8;
-      font-size: 9px;
-      margin-top: 3px;
+      font-size: 11px; /* DIPERBESAR dari 9px */
+      margin-top: 4px; /* DIPERBESAR dari 3px */
     }
 
     .no-preview {
       text-align: center;
       color: #666;
       font-style: italic;
-      padding: 25px 12px;
-      font-size: 13px;
+      padding: 30px 16px; /* DIPERBESAR dari 25px 12px */
+      font-size: 14px; /* DIPERBESAR dari 13px */
     }
 
     /* Style untuk nilai kosong */
@@ -367,14 +384,14 @@
     .links-container {
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 4px; /* DIPERBESAR dari 3px */
       width: 100%;
     }
 
     .link-item {
       display: flex;
       align-items: center;
-      min-height: 16px;
+      min-height: 18px; /* DIPERBESAR dari 16px */
     }
 
     .value a {
@@ -382,7 +399,7 @@
       text-decoration: none;
       word-break: break-all;
       outline: none;
-      font-size: 12px;
+      font-size: 13px; /* DIPERBESAR dari 12px */
     }
 
     .value a:focus {
@@ -405,21 +422,21 @@
     .ts-toggle-container {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px; /* DIPERBESAR dari 6px */
     }
 
     .ts-toggle-label {
       color: #00b4d8;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 14px; /* DIPERBESAR dari 12px */
     }
 
     /* Toggle Switch */
     .ts-toggle {
       position: relative;
       display: inline-block;
-      width: 45px;
-      height: 22px;
+      width: 50px; /* DIPERBESAR dari 45px */
+      height: 26px; /* DIPERBESAR dari 22px */
     }
 
     .ts-toggle input {
@@ -437,14 +454,14 @@
       bottom: 0;
       background-color: #007b9e;
       transition: .4s;
-      border-radius: 22px;
+      border-radius: 26px; /* DIPERBESAR dari 22px */
     }
 
     .ts-slider:before {
       position: absolute;
       content: "";
-      height: 16px;
-      width: 16px;
+      height: 20px; /* DIPERBESAR dari 16px */
+      width: 20px; /* DIPERBESAR dari 16px */
       left: 3px;
       bottom: 3px;
       background-color: white;
@@ -457,15 +474,15 @@
     }
 
     input:checked + .ts-slider:before {
-      transform: translateX(23px);
+      transform: translateX(24px); /* DIPERBESAR dari 23px */
     }
 
     .ts-badge {
       color: #00ff88;
       font-weight: bold;
-      margin-left: 3px;
+      margin-left: 4px; /* DIPERBESAR dari 3px */
       display: none;
-      font-size: 13px;
+      font-size: 14px; /* DIPERBESAR dari 13px */
     }
   </style>
 </head>
@@ -746,7 +763,7 @@ function showCopySuccess(element) {
     const originalSvg = button.innerHTML;
     
     // Ganti dengan centang
-    button.innerHTML = '<span style="color: #00ff88; font-size: 14px; font-weight: bold;">✓</span>';
+    button.innerHTML = '<span style="color: #00ff88; font-size: 16px; font-weight: bold;">✓</span>';
     
     // Kembalikan setelah 1.5 detik
     setTimeout(() => {
